@@ -1,68 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>RealWinterfang's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>RealWinterfang's Portfolio</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
+  <header class="header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top">RealWinterfang</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="https://github.com/RealWinterfang" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="mailto:you@example.com">Email</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
+    <section class="hero" aria-label="Intro">
+      <div class="hero-content">
         <h1>RealWinterfang</h1>
         <p>Developer</p>
-        <button onclick="window.location.href='https://github.com/RealWinterfang'">GitHub</button>
-        <button onclick="window.location.href='mailto:you@example.com'">Email</button>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact</a>
+        </div>
+      </div>
     </section>
-    <section id="about">
-        <h2>About</h2>
-        <p>Your bio goes here...</p>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>Your bio goes here...</p>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>JavaScript</li>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Frontend</h3>
+          <ul class="list">
             <li>HTML</li>
             <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Frameworks</h3>
+          <ul class="list">
             <li>React</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Backend</h3>
+          <ul class="list">
             <li>Node.js</li>
-        </ul>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="card">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="card">
-            <h3>Project 3</h3>
-            <p>Description of project 3.</p>
-            <a href="#">View Project</a>
-        </div>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Project 1</h3>
+          <p>Description of project 1.</p>
+          <a class="card-link" href="#" target="_blank" rel="noreferrer">View Project</a>
+        </article>
+
+        <article class="card">
+          <h3>Project 2</h3>
+          <p>Description of project 2.</p>
+          <a class="card-link" href="#" target="_blank" rel="noreferrer">View Project</a>
+        </article>
+
+        <article class="card">
+          <h3>Project 3</h3>
+          <p>Description of project 3.</p>
+          <a class="card-link" href="#" target="_blank" rel="noreferrer">View Project</a>
+        </article>
+      </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+
+      <div class="contact-box">
+        <p>
+          Email:
+          <a class="link" href="mailto:you@example.com">you@example.com</a>
+        </p>
         <p>Social Links: [Your Social Links]</p>
+      </div>
     </section>
-    <footer>
-        <p>&copy; 2026 RealWinterfang</p>
-    </footer>
-    <script src="script.js"></script>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 RealWinterfang</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
